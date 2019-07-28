@@ -9,7 +9,7 @@ from api import PRN
 from utils.write import write_obj_with_colors
 
 # ---- init PRN
-os.environ['CUDA_VISIBLE_DEVICES'] = '0' # GPU number, -1 for CPU
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1' # GPU number, -1 for CPU
 prn = PRN(is_dlib = False) 
 
 

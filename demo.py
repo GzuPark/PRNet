@@ -121,9 +121,9 @@ def main(args):
         if args.isShow:
             # ---------- Plot
             image_pose = plot_pose_box(image, camera_matrix, kpt)
-            cv2.imshow('sparse alignment', plot_kpt(image, kpt))
-            cv2.imshow('dense alignment', plot_vertices(image, vertices))
-            cv2.imshow('pose', plot_pose_box(image, camera_matrix, kpt))
+            cv2.imshow('sparse alignment', plot_kpt(image, kpt)[:,:,::-1])
+            cv2.imshow('dense alignment', plot_vertices(image, vertices)[:,:,::-1])
+            cv2.imshow('pose', plot_pose_box(image, camera_matrix, kpt)[:,:,::-1])
             cv2.waitKey(0)
 
 

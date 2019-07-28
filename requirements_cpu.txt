@@ -1,0 +1,6 @@
+numpy>=1.14.3
+scikit-image
+scipy
+tensorflow~=1.4.1
+opencv-python~=3.4.2.17
+dlib~=19.10.0
